@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #container {
+		text-align:center;
+        width: 85%;
+        height: auto;
+        overflow: hidden;
+        background: #fff;
+		position:relative;
+    }
+    #slideshow {
+		text-align:center;
+        height: 100%;
+        width: 100%;
+    }
+    #slideshow img {
+        height: 100%;
+        width: 100%;
+    }
+    #pager {
+        text-align: center;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        background: rgba(0,0,0,.5);
+        z-index: 1000;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0s; 
+		
+		
+    }
+    #pager:hover {
+    opacity: 1;
+	   z-index:100;
+    }    
+    
+    #prev {
+		
+		text-align:left;
+        height: 15%;
+        width:  15%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        margin: 20% 2% auto 2%;
+        z-index: 1000;
+    }
+     #next {
+        text-align:right;
+	    height: 15%;
+        width:  15%;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right:0;
+        margin: 20% 2% auto 2%;
+        z-index: 1000;
+    }
+    
+    #pager img {
+		margin: 10px 5px;
+		opacity:0.3;
+		transition:all .3s ease-in-out 0s;
+		}
+	#pager img:hover {
+		opacity:10;
+		transform:scale(1.05);
+		z-index:100;
+		}
